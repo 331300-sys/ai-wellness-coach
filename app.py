@@ -1,121 +1,101 @@
 import streamlit as st
-import pandas as pd
 import random
+from fpdf import FPDF
 
-st.set_page_config(page_title="🥦 AI Wellness Coach", layout="wide")
+# ------------------ Food Options ------------------ #
+food_options = {
+    "veg": {
+        "breakfast": ["Oats with fruits", "Poha", "Upma", "Paneer sandwich", "Daliya", "Idli-Sambar"],
+        "lunch": ["Dal", "Rice", "Roti", "Vegetable curry", "Paneer bhurji", "Curd", "Salad"],
+        "dinner": ["Vegetable pulao", "Mixed veg curry", "Chapati", "Moong dal", "Soup", "Salad"],
+        "snacks": ["Sprouts", "Fruit salad", "Dry fruits", "Green tea with nuts"]
+    },
+    "non-veg": {
+        "breakfast": ["Egg omelette", "Boiled eggs", "Chicken sandwich", "Oats with milk", "Idli-Sambar"],
+        "lunch": ["Chicken curry", "Fish fry", "Egg curry", "Rice", "Chapati", "Dal", "Salad"],
+        "dinner": ["Grilled chicken", "Fish curry", "Vegetable curry", "Chapati", "Soup", "Salad"],
+        "snacks": ["Boiled eggs", "Fruit salad", "Dry fruits", "Yogurt with seeds"]
+    },
+    "vegan": {
+        "breakfast": ["Tofu scramble", "Oats with almond milk", "Smoothie bowl", "Quinoa porridge"],
+        "lunch": ["Dal", "Brown rice", "Chapati", "Veg curry", "Tofu stir fry", "Salad"],
+        "dinner": ["Quinoa pulao", "Vegetable curry", "Soup", "Chapati", "Sprouts salad"],
+        "snacks": ["Roasted chickpeas", "Fruit salad", "Dry fruits", "Herbal tea"]
+    }
+}
 
-st.title("🥦 AI Wellness Coach")
-st.write("Your personalized nutrition assistant 🍽️")
-
-# Load dataset
-try:
-    food_data = pd.read_csv("food_nutrition_dataset_500.csv")
-except FileNotFoundError:
-    st.error("❌ food_nutrition_dataset_500.csv not found. Please upload it.")
-    uploaded_file = st.file_uploader("Upload your food_nutrition_dataset_500.csv", type=["csv"])
-    if uploaded_file:
-        food_data = pd.read_csv(uploaded_file)
-    else:
-        food_data = None
-
-if food_data is not None:
-    # -------------------------
-    # User Inputs
-    # -------------------------
-    st.sidebar.header("👤 Your Profile")
-
-    age = st.sidebar.number_input("Age", min_value=10, max_value=100, value=25)
-    gender = st.sidebar.radio("Gender", ["Male", "Female"])
-    weight = st.sidebar.number_input("Weight (kg)", min_value=30, max_value=200, value=70)
-    height = st.sidebar.number_input("Height (cm)", min_value=120, max_value=220, value=170)
-    diet_pref = st.sidebar.radio("Diet Preference", ["Veg", "Non-Veg"])
-
-    # -------------------------
-    # BMR Calculation
-    # -------------------------
+# ------------------ Calorie Calculator ------------------ #
+def calculate_calories(age, gender, weight, height):
     if gender == "Male":
         bmr = 10 * weight + 6.25 * height - 5 * age + 5
     else:
         bmr = 10 * weight + 6.25 * height - 5 * age - 161
+    return round(bmr * 1.2)  # sedentary activity multiplier
 
-    daily_calories = round(bmr * 1.2, 0)  # sedentary lifestyle
-    st.sidebar.markdown(f"### 🔥 Estimated Daily Calorie Needs: **{daily_calories} kcal**")
+# ------------------ Diet Generator ------------------ #
+def generate_diet(preference, daily_calories):
+    foods = food_options.get(preference, {})
+    if not foods:
+        return {"Error": "Invalid diet preference"}
 
-    # -------------------------
-    # Personalized Diet Plan
-    # -------------------------
-    st.subheader("🥗 Generate Personalized Diet Plan")
+    plan = {
+        "Breakfast": random.sample(foods["breakfast"], 2),
+        "Lunch": random.sample(foods["lunch"], 3),
+        "Snacks": random.sample(foods["snacks"], 2),
+        "Dinner": random.sample(foods["dinner"], 3),
+        "Hydration": "Drink at least 2.5 – 3 litres of water daily 💧"
+    }
 
-    if st.button("Generate Diet Plan"):
-        # Filter by diet preference
-        if diet_pref == "Veg":
-            filtered_foods = food_data[food_data["Type"] == "Veg"]
+    return plan
+
+# ------------------ PDF Export ------------------ #
+def create_pdf(diet_plan, daily_calories):
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Arial", size=12)
+
+    pdf.cell(200, 10, txt="Personalized Diet Plan", ln=True, align="C")
+    pdf.ln(10)
+    pdf.cell(200, 10, txt=f"Recommended Daily Calories: {daily_calories} kcal", ln=True)
+
+    for meal, items in diet_plan.items():
+        pdf.ln(5)
+        pdf.set_font("Arial", "B", size=12)
+        pdf.cell(200, 10, txt=meal, ln=True)
+        pdf.set_font("Arial", size=12)
+        if isinstance(items, list):
+            for i in items:
+                pdf.cell(200, 10, txt=f"- {i}", ln=True)
         else:
-            filtered_foods = food_data.copy()  # Veg + Non-Veg
+            pdf.cell(200, 10, txt=items, ln=True)
 
-        # Simple random sampling for meals
-        breakfast = filtered_foods.sample(1)
-        lunch = filtered_foods.sample(2)
-        dinner = filtered_foods.sample(2)
+    return pdf
 
-        st.write(f"### 🍳 Breakfast")
-        st.dataframe(breakfast[["Food Name", "Calories", "Protein (g)", "Carbs (g)", "Fat (g)", "Preparation Style"]])
+# ------------------ Streamlit App ------------------ #
+st.title("🥗 AI Wellness Coach - Personalized Diet Plan")
 
-        st.write(f"### 🍲 Lunch")
-        st.dataframe(lunch[["Food Name", "Calories", "Protein (g)", "Carbs (g)", "Fat (g)", "Preparation Style"]])
+with st.sidebar:
+    st.header("Enter Your Details")
+    age = st.number_input("Age:", min_value=10, max_value=100, step=1)
+    gender = st.radio("Gender:", ["Male", "Female"])
+    weight = st.number_input("Weight (kg):", min_value=20, max_value=200, step=1)
+    height = st.number_input("Height (cm):", min_value=100, max_value=250, step=1)
+    preference = st.selectbox("Diet Preference:", ["veg", "non-veg", "vegan"])
+    generate_btn = st.button("Generate Diet Plan")
 
-        st.write(f"### 🍛 Dinner")
-        st.dataframe(dinner[["Food Name", "Calories", "Protein (g)", "Carbs (g)", "Fat (g)", "Preparation Style"]])
+if generate_btn:
+    daily_calories = calculate_calories(age, gender, weight, height)
+    diet_plan = generate_diet(preference, daily_calories)
 
-        # Total calories
-        total_calories = breakfast["Calories"].sum() + lunch["Calories"].sum() + dinner["Calories"].sum()
-        st.markdown(f"### 📊 Total Calories in Plan: **{total_calories} kcal**")
-        st.markdown(f"💡 Your target is around **{daily_calories} kcal/day**.")
+    st.subheader("Your Personalized Diet Plan")
+    st.write(f"**Recommended Daily Calories:** {daily_calories} kcal")
+    st.progress(70)  # Just a fun visual
 
+    for meal, items in diet_plan.items():
+        st.write(f"**{meal}**: {', '.join(items) if isinstance(items, list) else items}")
 
-import pandas as pd
-
-st.set_page_config(page_title="🥦 AI Wellness Coach", layout="wide")
-
-st.title("🥦 AI Wellness Coach")
-st.write("Your personalized nutrition assistant powered by food data 🍽️")
-
-# Load food dataset
-try:
-    food_data = pd.read_csv("food_nutrition_dataset_500.csv")
-    st.success("✅ Food dataset loaded successfully!")
-except FileNotFoundError:
-    st.error("❌ food_nutrition_dataset_500.csv not found in repo. Please upload it.")
-    uploaded_file = st.file_uploader("Upload your food_nutrition_dataset_500.csv", type=["csv"])
-    if uploaded_file:
-        food_data = pd.read_csv(uploaded_file)
-    else:
-        food_data = None
-
-if food_data is not None:
-    # Show preview
-    st.subheader("📋 Food Database Preview")
-    st.dataframe(food_data.head(10))
-
-    # Search bar
-    st.subheader("🔍 Search for Food")
-    query = st.text_input("Enter a food name (e.g., Paneer Curry, Brown Rice, Dal Tadka):")
-    
-    if query:
-        results = food_data[food_data["Food Name"].str.contains(query, case=False, na=False)]
-        if not results.empty:
-            st.write(f"### Results for '{query}'")
-            st.dataframe(results)
-        else:
-            st.warning("⚠️ No matching food found.")
-
-    # Simple Meal Plan Suggestion
-    st.subheader("🥗 Generate a Simple Meal Plan")
-    if st.button("Suggest Meal Plan"):
-        sample_meal = food_data.sample(3)  # pick 3 random foods
-        st.write("Here’s a suggested balanced meal plan:")
-        st.dataframe(sample_meal[["Food Name", "Calories", "Protein (g)", "Carbs (g)", "Fat (g)", "Preparation Style"]])
-
-
-
-
+    # PDF Download
+    pdf = create_pdf(diet_plan, daily_calories)
+    pdf.output("diet_plan.pdf")
+    with open("diet_plan.pdf", "rb") as f:
+        st.download_button("📥 Download Diet Plan as PDF", f, file_name="diet_plan.pdf")
