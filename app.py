@@ -1,4 +1,4 @@
-import streamlit as stimport streamlit as st
+import streamlit as st
 import pandas as pd
 import random
 
@@ -115,6 +115,7 @@ if food_data is not None:
         sample_meal = food_data.sample(3)  # pick 3 random foods
         st.write("Here’s a suggested balanced meal plan:")
         st.dataframe(sample_meal[["Food Name", "Calories", "Protein (g)", "Carbs (g)", "Fat (g)", "Preparation Style"]])
+
 
 
 
