@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import random
 
 # ----------------------------
 # Page Config
@@ -22,38 +23,42 @@ weight = st.number_input("Enter your weight (kg):", min_value=30, max_value=200,
 activity = st.selectbox("Select your activity level:", ["Low", "Medium", "High"])
 
 # ----------------------------
-# Sample Meal Plan Data
+# Load Food Database (CSV)
 # ----------------------------
-meal_data = [
-    {"Food": "Oatmeal with Fruits", "Calories": 300, "Protein": 10, "Carbs": 50, "Fat": 5, "Preparation Time": "10 mins"},
-    {"Food": "Grilled Chicken Salad", "Calories": 400, "Protein": 35, "Carbs": 20, "Fat": 10, "Preparation Time": "15 mins"},
-    {"Food": "Brown Rice with Veggies", "Calories": 450, "Protein": 12, "Carbs": 60, "Fat": 8, "Preparation Time": "20 mins"},
-    {"Food": "Protein Smoothie", "Calories": 250, "Protein": 20, "Carbs": 30, "Fat": 5, "Preparation Time": "5 mins"},
-]
+@st.cache_data
+def load_food_data():
+    try:
+        df = pd.read_csv("foods.csv")  # <-- make sure your CSV file is named foods.csv in repo
+        return df
+    except Exception as e:
+        st.error(f"Error loading food data: {e}")
+        return pd.DataFrame()
 
-plan = pd.DataFrame(meal_data)
+food_df = load_food_data()
 
 # ----------------------------
-# Meal Plan Recommendation
+# Generate Meal Plan
 # ----------------------------
 st.subheader("🥦 Suggested Meal Plan")
 
-# Display dataframe safely (avoid KeyError)
-if not plan.empty:
-    st.dataframe(plan)
+if not food_df.empty:
+    # Pick random 5 meals (for variety)
+    sample_meals = food_df.sample(5, random_state=random.randint(1, 1000))
+
+    st.dataframe(sample_meals)
+
+    # ----------------------------
+    # Wellness Recommendation
+    # ----------------------------
+    st.subheader("📋 Wellness Recommendation")
+
+    if goal == "Weight Loss":
+        st.info("👉 Focus on high-protein, low-carb meals. Include cardio exercises 4-5 times/week.")
+    elif goal == "Muscle Gain":
+        st.info("👉 Increase protein intake and strength training. Ensure calorie surplus with balanced macros.")
+    else:
+        st.info("👉 Maintain a balanced diet with moderate portions. Stay active and hydrated.")
+
+    st.success("✅ Your personalized wellness plan has been generated!")
 else:
-    st.warning("⚠️ No meal plan available. Please try again later.")
-
-# ----------------------------
-# Summary Recommendation
-# ----------------------------
-st.subheader("📋 Wellness Recommendation")
-
-if goal == "Weight Loss":
-    st.info("👉 Focus on high-protein, low-carb meals. Include cardio exercises 4-5 times/week.")
-elif goal == "Muscle Gain":
-    st.info("👉 Increase protein intake and strength training. Ensure calorie surplus with balanced macros.")
-else:
-    st.info("👉 Maintain a balanced diet with moderate portions. Stay active and hydrated.")
-
-st.success("✅ Your personalized wellness plan has been generated!")
+    st.warning("⚠️ No food database found. Please upload a valid foods.csv file.")
