@@ -1,64 +1,45 @@
 import streamlit as st
 import pandas as pd
-import random
 
-# ----------------------------
-# Page Config
-# ----------------------------
-st.set_page_config(page_title="AI Wellness Coach", page_icon="🥗", layout="centered")
+st.set_page_config(page_title="🥦 AI Wellness Coach", layout="wide")
 
-st.title("🥗 AI Wellness Coach")
-st.write("Get a personalized meal plan based on your health goals 🚀")
+st.title("🥦 AI Wellness Coach")
+st.write("Your personalized nutrition assistant powered by food data 🍽️")
 
-# ----------------------------
-# User Input
-# ----------------------------
-goal = st.selectbox(
-    "Select your health goal:",
-    ["Weight Loss", "Muscle Gain", "General Wellness"]
-)
-
-age = st.number_input("Enter your age:", min_value=10, max_value=100, value=25)
-weight = st.number_input("Enter your weight (kg):", min_value=30, max_value=200, value=70)
-activity = st.selectbox("Select your activity level:", ["Low", "Medium", "High"])
-
-# ----------------------------
-# Load Food Database (CSV)
-# ----------------------------
-@st.cache_data
-def load_food_data():
-    try:
-        df = pd.read_csv("foods.csv")  # <-- make sure your CSV file is named foods.csv in repo
-        return df
-    except Exception as e:
-        st.error(f"Error loading food data: {e}")
-        return pd.DataFrame()
-
-food_df = load_food_data()
-
-# ----------------------------
-# Generate Meal Plan
-# ----------------------------
-st.subheader("🥦 Suggested Meal Plan")
-
-if not food_df.empty:
-    # Pick random 5 meals (for variety)
-    sample_meals = food_df.sample(5, random_state=random.randint(1, 1000))
-
-    st.dataframe(sample_meals)
-
-    # ----------------------------
-    # Wellness Recommendation
-    # ----------------------------
-    st.subheader("📋 Wellness Recommendation")
-
-    if goal == "Weight Loss":
-        st.info("👉 Focus on high-protein, low-carb meals. Include cardio exercises 4-5 times/week.")
-    elif goal == "Muscle Gain":
-        st.info("👉 Increase protein intake and strength training. Ensure calorie surplus with balanced macros.")
+# Load food dataset
+try:
+    food_data = pd.read_csv("food_nutrition_dataset_500.csv")
+    st.success("✅ Food dataset loaded successfully!")
+except FileNotFoundError:
+    st.error("❌ food_nutrition_dataset_500.csv not found in repo. Please upload it.")
+    uploaded_file = st.file_uploader("Upload your food_nutrition_dataset_500.csv", type=["csv"])
+    if uploaded_file:
+        food_data = pd.read_csv(uploaded_file)
     else:
-        st.info("👉 Maintain a balanced diet with moderate portions. Stay active and hydrated.")
+        food_data = None
 
-    st.success("✅ Your personalized wellness plan has been generated!")
-else:
-    st.warning("⚠️ No food database found. Please upload a valid foods.csv file.")
+if food_data is not None:
+    # Show preview
+    st.subheader("📋 Food Database Preview")
+    st.dataframe(food_data.head(10))
+
+    # Search bar
+    st.subheader("🔍 Search for Food")
+    query = st.text_input("Enter a food name (e.g., Paneer Curry, Brown Rice, Dal Tadka):")
+    
+    if query:
+        results = food_data[food_data["Food Name"].str.contains(query, case=False, na=False)]
+        if not results.empty:
+            st.write(f"### Results for '{query}'")
+            st.dataframe(results)
+        else:
+            st.warning("⚠️ No matching food found.")
+
+    # Simple Meal Plan Suggestion
+    st.subheader("🥗 Generate a Simple Meal Plan")
+    if st.button("Suggest Meal Plan"):
+        sample_meal = food_data.sample(3)  # pick 3 random foods
+        st.write("Here’s a suggested balanced meal plan:")
+        st.dataframe(sample_meal[["Food Name", "Calories", "Protein (g)", "Carbs (g)", "Fat (g)", "Preparation Style"]])
+
+
