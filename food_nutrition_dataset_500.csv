@@ -1,0 +1,501 @@
+Food Name,Category,Type,Calories,Protein (g),Carbs (g),Fat (g),Preparation Style
+Paneer Curry 1,Dairy,Veg,349,27.8,31.1,19.0,Cooked with spices
+Bhindi Masala 2,Vegetable,Veg,283,20.8,25.4,3.6,Cooked with spices
+Dal Tadka 3,Legume,Veg,165,29.6,13.6,13.2,Boiled
+Dal Tadka 4,Legume,Veg,362,25.0,16.0,10.2,Grilled
+Palak Paneer 5,Dairy,Veg,146,28.2,32.3,7.4,Steamed
+Chana Masala 6,Legume,Veg,341,20.4,48.5,1.5,Boiled
+Chana Masala 7,Legume,Veg,168,21.8,27.8,2.4,Steamed
+Brown Rice 8,Grain,Veg,128,14.6,23.9,16.9,Cooked with spices
+Brown Rice 9,Grain,Veg,320,19.0,14.9,17.7,Grilled
+Bhindi Masala 10,Vegetable,Veg,102,12.1,24.7,6.2,Grilled
+Bhindi Masala 11,Vegetable,Veg,132,4.1,33.9,16.5,Steamed
+Vegetable Pulao 12,Grain,Veg,172,2.4,34.5,11.6,Fried
+Stuffed Paratha 13,Grain,Veg,162,19.2,9.1,11.3,Boiled
+Stuffed Paratha 14,Grain,Veg,391,8.5,7.2,19.8,Steamed
+Paneer Curry 15,Dairy,Veg,211,2.5,14.2,9.0,Fried
+Aloo Gobi 16,Vegetable,Veg,164,19.8,28.9,14.0,Cooked with spices
+Chana Masala 17,Legume,Veg,364,16.5,43.7,3.1,Steamed
+Paneer Curry 18,Dairy,Veg,260,28.2,33.6,3.4,Cooked with spices
+Rajma Curry 19,Legume,Veg,334,25.9,10.1,19.3,Grilled
+Bhindi Masala 20,Vegetable,Veg,231,4.8,26.9,14.8,Boiled
+Aloo Gobi 21,Vegetable,Veg,156,11.1,8.3,12.7,Boiled
+Dal Tadka 22,Legume,Veg,286,11.4,34.6,9.3,Cooked with spices
+Bhindi Masala 23,Vegetable,Veg,326,3.1,39.4,14.2,Steamed
+Brown Rice 24,Grain,Veg,256,21.5,15.4,10.1,Fried
+Aloo Gobi 25,Vegetable,Veg,154,28.5,17.2,2.7,Steamed
+Palak Paneer 26,Dairy,Veg,130,2.7,11.2,8.7,Grilled
+Rajma Curry 27,Legume,Veg,111,14.5,27.1,6.0,Grilled
+Rajma Curry 28,Legume,Veg,377,27.0,43.6,18.0,Steamed
+Stuffed Paratha 29,Grain,Veg,363,5.3,9.9,15.5,Grilled
+Vegetable Pulao 30,Grain,Veg,267,27.2,19.4,8.0,Boiled
+Aloo Gobi 31,Vegetable,Veg,280,2.8,46.5,13.1,Steamed
+Chana Masala 32,Legume,Veg,217,20.1,27.2,12.5,Cooked with spices
+Stuffed Paratha 33,Grain,Veg,190,6.6,16.9,13.6,Grilled
+Bhindi Masala 34,Vegetable,Veg,370,12.0,21.5,14.0,Grilled
+Stuffed Paratha 35,Grain,Veg,233,28.1,10.3,19.9,Steamed
+Chana Masala 36,Legume,Veg,209,8.4,43.4,3.3,Grilled
+Aloo Gobi 37,Vegetable,Veg,176,8.6,29.6,15.4,Cooked with spices
+Rajma Curry 38,Legume,Veg,308,3.0,20.4,7.6,Boiled
+Paneer Curry 39,Dairy,Veg,246,2.9,8.7,12.5,Boiled
+Vegetable Pulao 40,Grain,Veg,343,12.2,7.2,8.7,Fried
+Dal Tadka 41,Legume,Veg,260,25.8,30.3,19.4,Fried
+Paneer Curry 42,Dairy,Veg,215,27.0,16.1,8.8,Steamed
+Rajma Curry 43,Legume,Veg,144,23.0,47.2,3.9,Cooked with spices
+Aloo Gobi 44,Vegetable,Veg,382,2.3,45.7,17.1,Steamed
+Dal Tadka 45,Legume,Veg,358,15.4,13.8,12.7,Fried
+Paneer Curry 46,Dairy,Veg,356,18.5,12.4,18.3,Grilled
+Vegetable Pulao 47,Grain,Veg,368,9.6,39.5,16.8,Fried
+Brown Rice 48,Grain,Veg,227,27.0,17.1,16.7,Steamed
+Bhindi Masala 49,Vegetable,Veg,176,4.5,41.5,11.1,Steamed
+Chana Masala 50,Legume,Veg,151,6.3,18.3,17.1,Steamed
+Rajma Curry 51,Legume,Veg,393,11.2,26.0,5.5,Steamed
+Rajma Curry 52,Legume,Veg,308,11.2,38.6,1.8,Boiled
+Chana Masala 53,Legume,Veg,397,4.0,12.3,15.8,Fried
+Paneer Curry 54,Dairy,Veg,400,22.8,13.4,19.7,Steamed
+Bhindi Masala 55,Vegetable,Veg,239,17.2,26.3,14.8,Steamed
+Aloo Gobi 56,Vegetable,Veg,219,9.6,19.2,12.5,Boiled
+Stuffed Paratha 57,Grain,Veg,395,18.8,7.4,6.6,Grilled
+Aloo Gobi 58,Vegetable,Veg,108,11.4,25.9,1.9,Boiled
+Vegetable Pulao 59,Grain,Veg,332,6.0,48.1,8.8,Grilled
+Bhindi Masala 60,Vegetable,Veg,316,3.6,34.7,15.4,Fried
+Bhindi Masala 61,Vegetable,Veg,297,17.9,49.0,12.2,Steamed
+Rajma Curry 62,Legume,Veg,155,10.1,38.6,7.5,Steamed
+Brown Rice 63,Grain,Veg,348,4.2,11.5,4.4,Boiled
+Palak Paneer 64,Dairy,Veg,138,14.5,32.1,16.4,Steamed
+Aloo Gobi 65,Vegetable,Veg,346,28.6,27.4,19.3,Boiled
+Chana Masala 66,Legume,Veg,295,18.6,36.7,15.6,Cooked with spices
+Bhindi Masala 67,Vegetable,Veg,302,23.7,41.1,7.3,Cooked with spices
+Rajma Curry 68,Legume,Veg,391,16.3,49.1,14.9,Fried
+Stuffed Paratha 69,Grain,Veg,378,15.6,27.9,14.2,Grilled
+Bhindi Masala 70,Vegetable,Veg,335,8.8,33.6,2.8,Steamed
+Stuffed Paratha 71,Grain,Veg,181,5.5,18.0,2.8,Boiled
+Dal Tadka 72,Legume,Veg,104,28.0,32.8,18.6,Steamed
+Bhindi Masala 73,Vegetable,Veg,136,2.6,18.0,6.6,Fried
+Stuffed Paratha 74,Grain,Veg,126,2.5,37.9,7.4,Steamed
+Bhindi Masala 75,Vegetable,Veg,383,7.3,18.9,11.5,Cooked with spices
+Stuffed Paratha 76,Grain,Veg,346,17.1,19.4,4.4,Grilled
+Palak Paneer 77,Dairy,Veg,162,24.5,20.9,11.7,Steamed
+Vegetable Pulao 78,Grain,Veg,281,20.9,46.5,1.5,Fried
+Bhindi Masala 79,Vegetable,Veg,337,27.3,44.3,5.4,Fried
+Stuffed Paratha 80,Grain,Veg,363,27.6,7.5,17.0,Boiled
+Bhindi Masala 81,Vegetable,Veg,256,18.4,36.6,19.2,Fried
+Dal Tadka 82,Legume,Veg,119,15.0,30.0,19.1,Boiled
+Aloo Gobi 83,Vegetable,Veg,352,19.7,44.7,3.9,Fried
+Dal Tadka 84,Legume,Veg,169,28.5,48.2,10.8,Cooked with spices
+Dal Tadka 85,Legume,Veg,390,17.7,27.1,15.4,Boiled
+Stuffed Paratha 86,Grain,Veg,221,19.1,29.3,12.7,Fried
+Rajma Curry 87,Legume,Veg,140,3.2,18.2,7.9,Cooked with spices
+Chana Masala 88,Legume,Veg,338,26.1,28.4,12.8,Boiled
+Aloo Gobi 89,Vegetable,Veg,184,3.0,17.8,4.8,Cooked with spices
+Stuffed Paratha 90,Grain,Veg,157,20.5,35.8,17.5,Fried
+Bhindi Masala 91,Vegetable,Veg,187,2.9,44.2,10.8,Fried
+Brown Rice 92,Grain,Veg,155,18.8,5.4,8.9,Cooked with spices
+Rajma Curry 93,Legume,Veg,232,16.8,30.1,14.0,Grilled
+Aloo Gobi 94,Vegetable,Veg,237,9.4,9.8,2.8,Grilled
+Stuffed Paratha 95,Grain,Veg,174,3.9,38.6,12.6,Grilled
+Brown Rice 96,Grain,Veg,150,6.1,35.3,6.2,Boiled
+Brown Rice 97,Grain,Veg,140,18.8,5.2,10.4,Cooked with spices
+Brown Rice 98,Grain,Veg,103,2.3,12.5,8.2,Grilled
+Dal Tadka 99,Legume,Veg,143,21.4,41.4,11.0,Cooked with spices
+Rajma Curry 100,Legume,Veg,326,8.1,42.0,3.1,Grilled
+Dal Tadka 101,Legume,Veg,257,2.9,21.5,10.7,Cooked with spices
+Chana Masala 102,Legume,Veg,196,26.9,15.5,9.1,Steamed
+Vegetable Pulao 103,Grain,Veg,257,25.0,14.2,11.5,Steamed
+Aloo Gobi 104,Vegetable,Veg,164,21.0,19.5,12.8,Grilled
+Palak Paneer 105,Dairy,Veg,331,7.9,26.0,12.9,Boiled
+Paneer Curry 106,Dairy,Veg,340,18.2,15.7,3.9,Grilled
+Brown Rice 107,Grain,Veg,332,29.4,45.4,5.9,Boiled
+Paneer Curry 108,Dairy,Veg,325,4.0,49.0,19.9,Fried
+Chana Masala 109,Legume,Veg,291,13.7,40.5,19.4,Boiled
+Aloo Gobi 110,Vegetable,Veg,396,18.2,38.1,8.5,Steamed
+Dal Tadka 111,Legume,Veg,100,3.4,40.4,2.1,Steamed
+Brown Rice 112,Grain,Veg,299,12.6,13.2,19.5,Boiled
+Chana Masala 113,Legume,Veg,101,14.2,33.9,13.8,Boiled
+Chana Masala 114,Legume,Veg,115,8.2,40.6,1.2,Cooked with spices
+Bhindi Masala 115,Vegetable,Veg,386,12.8,8.8,5.0,Grilled
+Palak Paneer 116,Dairy,Veg,317,27.8,26.3,4.5,Grilled
+Brown Rice 117,Grain,Veg,203,27.4,31.2,7.2,Fried
+Stuffed Paratha 118,Grain,Veg,196,20.2,28.1,11.0,Cooked with spices
+Paneer Curry 119,Dairy,Veg,329,13.9,10.1,11.6,Cooked with spices
+Vegetable Pulao 120,Grain,Veg,319,21.9,45.8,4.8,Boiled
+Vegetable Pulao 121,Grain,Veg,187,17.1,9.8,6.8,Cooked with spices
+Aloo Gobi 122,Vegetable,Veg,349,25.3,32.7,3.8,Steamed
+Aloo Gobi 123,Vegetable,Veg,371,7.9,34.9,11.5,Boiled
+Paneer Curry 124,Dairy,Veg,344,24.3,14.0,13.9,Cooked with spices
+Bhindi Masala 125,Vegetable,Veg,390,9.0,31.6,11.3,Grilled
+Paneer Curry 126,Dairy,Veg,162,13.0,30.1,15.0,Grilled
+Chana Masala 127,Legume,Veg,296,2.1,9.7,12.3,Fried
+Aloo Gobi 128,Vegetable,Veg,397,23.7,45.8,14.0,Steamed
+Palak Paneer 129,Dairy,Veg,188,10.3,41.7,1.5,Boiled
+Chana Masala 130,Legume,Veg,251,21.8,28.9,11.4,Grilled
+Rajma Curry 131,Legume,Veg,353,28.3,37.0,3.2,Grilled
+Vegetable Pulao 132,Grain,Veg,164,20.5,10.6,12.0,Grilled
+Rajma Curry 133,Legume,Veg,223,24.4,17.7,5.4,Grilled
+Vegetable Pulao 134,Grain,Veg,274,24.8,44.4,10.3,Grilled
+Stuffed Paratha 135,Grain,Veg,162,2.5,27.7,4.0,Steamed
+Dal Tadka 136,Legume,Veg,298,22.1,19.0,8.7,Boiled
+Palak Paneer 137,Dairy,Veg,256,2.4,12.3,7.3,Fried
+Paneer Curry 138,Dairy,Veg,397,24.7,29.0,8.8,Boiled
+Paneer Curry 139,Dairy,Veg,338,11.7,41.1,11.5,Grilled
+Stuffed Paratha 140,Grain,Veg,219,7.0,12.8,9.7,Grilled
+Chana Masala 141,Legume,Veg,185,29.4,14.5,11.8,Boiled
+Rajma Curry 142,Legume,Veg,385,12.7,19.6,8.1,Fried
+Dal Tadka 143,Legume,Veg,387,27.0,49.0,17.6,Fried
+Paneer Curry 144,Dairy,Veg,157,15.2,41.5,15.7,Cooked with spices
+Aloo Gobi 145,Vegetable,Veg,132,17.5,43.7,11.3,Fried
+Chana Masala 146,Legume,Veg,262,2.2,21.1,1.3,Steamed
+Vegetable Pulao 147,Grain,Veg,391,17.8,31.5,3.8,Grilled
+Vegetable Pulao 148,Grain,Veg,119,26.5,37.3,9.0,Steamed
+Bhindi Masala 149,Vegetable,Veg,168,6.3,49.5,2.6,Fried
+Bhindi Masala 150,Vegetable,Veg,149,15.7,31.6,7.5,Grilled
+Paneer Curry 151,Dairy,Veg,312,16.2,14.9,3.2,Grilled
+Stuffed Paratha 152,Grain,Veg,378,22.9,17.7,9.1,Steamed
+Palak Paneer 153,Dairy,Veg,106,27.1,32.7,14.3,Steamed
+Vegetable Pulao 154,Grain,Veg,126,24.8,33.6,12.2,Steamed
+Vegetable Pulao 155,Grain,Veg,362,6.7,7.0,19.6,Steamed
+Aloo Gobi 156,Vegetable,Veg,227,14.9,28.0,15.4,Cooked with spices
+Vegetable Pulao 157,Grain,Veg,131,5.5,39.8,19.4,Fried
+Rajma Curry 158,Legume,Veg,322,10.5,28.5,18.3,Boiled
+Palak Paneer 159,Dairy,Veg,345,29.8,45.1,6.7,Grilled
+Chana Masala 160,Legume,Veg,258,14.6,46.8,6.6,Boiled
+Paneer Curry 161,Dairy,Veg,329,11.5,27.5,12.9,Cooked with spices
+Bhindi Masala 162,Vegetable,Veg,166,6.5,40.7,7.7,Fried
+Brown Rice 163,Grain,Veg,132,2.6,43.0,12.3,Steamed
+Vegetable Pulao 164,Grain,Veg,108,9.2,6.0,1.0,Steamed
+Vegetable Pulao 165,Grain,Veg,238,13.4,16.0,19.8,Grilled
+Chana Masala 166,Legume,Veg,254,12.5,6.2,9.6,Cooked with spices
+Stuffed Paratha 167,Grain,Veg,246,6.4,5.1,5.3,Boiled
+Bhindi Masala 168,Vegetable,Veg,255,8.2,42.9,18.9,Boiled
+Dal Tadka 169,Legume,Veg,199,10.9,38.5,6.1,Boiled
+Aloo Gobi 170,Vegetable,Veg,365,16.1,24.6,3.9,Steamed
+Palak Paneer 171,Dairy,Veg,383,19.8,23.1,1.0,Grilled
+Dal Tadka 172,Legume,Veg,157,18.0,30.3,6.0,Steamed
+Rajma Curry 173,Legume,Veg,357,19.2,19.9,2.6,Fried
+Bhindi Masala 174,Vegetable,Veg,199,20.8,12.6,10.2,Steamed
+Chana Masala 175,Legume,Veg,336,15.3,46.5,14.8,Steamed
+Chana Masala 176,Legume,Veg,179,16.6,16.2,1.9,Boiled
+Rajma Curry 177,Legume,Veg,359,10.4,34.1,19.6,Steamed
+Rajma Curry 178,Legume,Veg,131,6.0,27.8,3.1,Steamed
+Vegetable Pulao 179,Grain,Veg,400,23.6,35.2,6.9,Cooked with spices
+Dal Tadka 180,Legume,Veg,376,9.2,45.4,10.1,Fried
+Stuffed Paratha 181,Grain,Veg,229,10.4,13.0,6.0,Steamed
+Chana Masala 182,Legume,Veg,348,27.7,9.4,11.7,Grilled
+Bhindi Masala 183,Vegetable,Veg,272,8.0,21.3,3.7,Boiled
+Brown Rice 184,Grain,Veg,237,7.2,20.2,16.4,Steamed
+Palak Paneer 185,Dairy,Veg,293,27.3,13.5,1.9,Cooked with spices
+Stuffed Paratha 186,Grain,Veg,252,16.8,32.1,10.5,Fried
+Paneer Curry 187,Dairy,Veg,400,8.4,32.7,16.4,Grilled
+Brown Rice 188,Grain,Veg,288,6.0,33.2,12.1,Cooked with spices
+Vegetable Pulao 189,Grain,Veg,370,28.4,9.1,1.7,Grilled
+Vegetable Pulao 190,Grain,Veg,357,28.2,14.1,15.1,Boiled
+Aloo Gobi 191,Vegetable,Veg,120,3.0,35.5,5.7,Cooked with spices
+Palak Paneer 192,Dairy,Veg,249,13.1,35.7,16.1,Steamed
+Chana Masala 193,Legume,Veg,204,28.5,22.3,17.7,Boiled
+Chana Masala 194,Legume,Veg,336,13.6,25.3,6.1,Steamed
+Aloo Gobi 195,Vegetable,Veg,221,22.9,26.3,2.1,Fried
+Brown Rice 196,Grain,Veg,223,22.3,17.1,4.0,Boiled
+Aloo Gobi 197,Vegetable,Veg,377,10.4,28.9,10.2,Fried
+Stuffed Paratha 198,Grain,Veg,145,11.8,48.9,12.8,Steamed
+Rajma Curry 199,Legume,Veg,326,21.8,19.1,4.8,Grilled
+Brown Rice 200,Grain,Veg,209,7.1,25.1,9.1,Grilled
+Fried Fish 1,Seafood,Non-Veg,192,20.0,10.5,6.4,Cooked with spices
+Grilled Chicken 2,Meat,Non-Veg,378,26.1,23.3,19.3,Cooked with spices
+Egg Omelette 3,Egg,Non-Veg,169,15.3,14.8,5.3,Fried
+Chicken Biryani 4,Rice/Meat,Non-Veg,281,16.0,18.7,16.4,Grilled
+Chicken Tikka 5,Meat,Non-Veg,140,27.7,42.8,8.5,Grilled
+Egg Omelette 6,Egg,Non-Veg,101,8.3,40.1,7.7,Steamed
+Egg Curry 7,Egg,Non-Veg,113,27.7,34.3,8.1,Boiled
+Chicken Tikka 8,Meat,Non-Veg,295,21.2,24.6,10.3,Boiled
+Fish Curry 9,Seafood,Non-Veg,390,12.6,21.9,16.8,Steamed
+Grilled Chicken 10,Meat,Non-Veg,346,13.8,8.4,8.7,Grilled
+Egg Omelette 11,Egg,Non-Veg,209,23.8,26.2,12.1,Fried
+Kebab 12,Meat,Non-Veg,307,17.5,8.5,8.7,Steamed
+Egg Omelette 13,Egg,Non-Veg,384,13.2,22.1,5.3,Steamed
+Prawn Fry 14,Seafood,Non-Veg,232,11.0,23.9,1.9,Fried
+Fish Curry 15,Seafood,Non-Veg,157,4.6,26.6,16.4,Cooked with spices
+Prawn Fry 16,Seafood,Non-Veg,163,24.7,5.1,15.7,Cooked with spices
+Kebab 17,Meat,Non-Veg,363,11.3,29.5,5.3,Steamed
+Kebab 18,Meat,Non-Veg,182,6.5,13.2,3.7,Grilled
+Fried Fish 19,Seafood,Non-Veg,208,20.8,33.8,2.0,Fried
+Grilled Chicken 20,Meat,Non-Veg,145,18.4,16.2,3.0,Boiled
+Grilled Chicken 21,Meat,Non-Veg,215,29.9,30.8,3.0,Cooked with spices
+Kebab 22,Meat,Non-Veg,329,21.9,19.9,16.7,Grilled
+Fried Fish 23,Seafood,Non-Veg,304,20.0,5.3,17.5,Cooked with spices
+Mutton Curry 24,Meat,Non-Veg,162,29.2,14.8,5.3,Boiled
+Mutton Curry 25,Meat,Non-Veg,297,10.6,16.5,16.5,Grilled
+Mutton Curry 26,Meat,Non-Veg,169,23.1,43.7,15.4,Steamed
+Egg Omelette 27,Egg,Non-Veg,215,29.0,45.9,13.9,Boiled
+Egg Omelette 28,Egg,Non-Veg,283,18.5,39.0,17.5,Boiled
+Fish Curry 29,Seafood,Non-Veg,275,5.8,32.9,5.8,Cooked with spices
+Egg Omelette 30,Egg,Non-Veg,342,6.2,22.9,15.5,Fried
+Fried Fish 31,Seafood,Non-Veg,157,13.6,34.0,10.2,Steamed
+Grilled Chicken 32,Meat,Non-Veg,340,15.2,44.3,2.8,Cooked with spices
+Fried Fish 33,Seafood,Non-Veg,237,21.1,28.2,8.1,Fried
+Egg Omelette 34,Egg,Non-Veg,238,17.1,34.3,7.1,Fried
+Fish Curry 35,Seafood,Non-Veg,146,5.1,48.5,19.1,Cooked with spices
+Prawn Fry 36,Seafood,Non-Veg,193,23.8,26.2,14.9,Boiled
+Fried Fish 37,Seafood,Non-Veg,206,13.3,37.5,13.0,Steamed
+Chicken Biryani 38,Rice/Meat,Non-Veg,261,14.2,6.1,4.3,Fried
+Chicken Biryani 39,Rice/Meat,Non-Veg,384,11.5,19.8,15.0,Steamed
+Kebab 40,Meat,Non-Veg,178,4.1,7.6,6.3,Steamed
+Chicken Biryani 41,Rice/Meat,Non-Veg,135,8.7,5.8,15.3,Fried
+Grilled Chicken 42,Meat,Non-Veg,363,11.2,26.2,6.0,Boiled
+Mutton Curry 43,Meat,Non-Veg,201,22.8,6.1,3.0,Fried
+Chicken Tikka 44,Meat,Non-Veg,281,16.5,42.8,9.1,Steamed
+Chicken Biryani 45,Rice/Meat,Non-Veg,384,19.3,29.9,2.1,Boiled
+Kebab 46,Meat,Non-Veg,232,19.5,30.2,12.5,Fried
+Chicken Tikka 47,Meat,Non-Veg,272,25.6,45.2,2.6,Boiled
+Chicken Tikka 48,Meat,Non-Veg,348,8.5,20.9,16.6,Cooked with spices
+Kebab 49,Meat,Non-Veg,345,29.2,11.7,20.0,Steamed
+Mutton Curry 50,Meat,Non-Veg,257,9.9,40.0,8.7,Grilled
+Grilled Chicken 51,Meat,Non-Veg,326,6.0,18.5,16.8,Boiled
+Grilled Chicken 52,Meat,Non-Veg,339,25.8,44.1,6.8,Steamed
+Mutton Curry 53,Meat,Non-Veg,276,5.4,30.7,18.3,Steamed
+Prawn Fry 54,Seafood,Non-Veg,385,18.5,39.8,19.6,Cooked with spices
+Fried Fish 55,Seafood,Non-Veg,154,16.7,23.4,12.1,Cooked with spices
+Grilled Chicken 56,Meat,Non-Veg,332,21.7,17.5,6.8,Grilled
+Egg Curry 57,Egg,Non-Veg,119,5.6,44.3,10.5,Cooked with spices
+Fried Fish 58,Seafood,Non-Veg,187,7.6,14.0,7.7,Steamed
+Egg Curry 59,Egg,Non-Veg,397,2.3,48.7,11.2,Fried
+Egg Omelette 60,Egg,Non-Veg,181,2.1,39.9,10.7,Steamed
+Fish Curry 61,Seafood,Non-Veg,341,9.5,25.8,9.8,Fried
+Chicken Tikka 62,Meat,Non-Veg,331,27.7,12.8,6.8,Grilled
+Chicken Tikka 63,Meat,Non-Veg,243,14.2,5.6,8.5,Cooked with spices
+Kebab 64,Meat,Non-Veg,353,23.6,15.2,19.2,Fried
+Egg Curry 65,Egg,Non-Veg,193,10.1,28.4,8.4,Cooked with spices
+Grilled Chicken 66,Meat,Non-Veg,151,5.9,6.6,16.3,Steamed
+Egg Curry 67,Egg,Non-Veg,219,14.3,12.5,8.4,Steamed
+Mutton Curry 68,Meat,Non-Veg,115,6.9,37.3,1.1,Steamed
+Chicken Biryani 69,Rice/Meat,Non-Veg,326,26.1,31.4,18.7,Steamed
+Fish Curry 70,Seafood,Non-Veg,133,23.4,35.7,7.1,Grilled
+Egg Omelette 71,Egg,Non-Veg,236,6.3,47.3,2.1,Grilled
+Chicken Biryani 72,Rice/Meat,Non-Veg,349,2.0,9.9,19.1,Boiled
+Egg Omelette 73,Egg,Non-Veg,212,24.6,47.3,16.2,Cooked with spices
+Egg Omelette 74,Egg,Non-Veg,159,5.3,12.9,10.2,Grilled
+Chicken Tikka 75,Meat,Non-Veg,380,18.1,22.4,15.0,Steamed
+Mutton Curry 76,Meat,Non-Veg,203,15.8,44.1,1.3,Steamed
+Prawn Fry 77,Seafood,Non-Veg,261,22.9,29.2,17.6,Fried
+Grilled Chicken 78,Meat,Non-Veg,225,29.4,8.0,12.2,Boiled
+Fish Curry 79,Seafood,Non-Veg,188,24.6,20.6,3.5,Fried
+Fish Curry 80,Seafood,Non-Veg,195,10.6,23.2,3.9,Boiled
+Chicken Biryani 81,Rice/Meat,Non-Veg,336,22.2,9.3,5.6,Cooked with spices
+Chicken Tikka 82,Meat,Non-Veg,104,8.7,30.2,17.9,Boiled
+Fish Curry 83,Seafood,Non-Veg,331,5.3,33.6,14.7,Grilled
+Mutton Curry 84,Meat,Non-Veg,380,27.6,44.7,3.6,Fried
+Chicken Tikka 85,Meat,Non-Veg,340,27.5,35.4,7.1,Cooked with spices
+Kebab 86,Meat,Non-Veg,114,27.4,35.3,8.9,Steamed
+Fried Fish 87,Seafood,Non-Veg,286,8.4,11.6,2.4,Fried
+Chicken Tikka 88,Meat,Non-Veg,283,19.6,15.4,10.1,Cooked with spices
+Chicken Biryani 89,Rice/Meat,Non-Veg,376,10.1,30.3,9.3,Steamed
+Chicken Tikka 90,Meat,Non-Veg,123,11.3,18.2,17.9,Cooked with spices
+Grilled Chicken 91,Meat,Non-Veg,241,2.0,25.6,6.0,Fried
+Grilled Chicken 92,Meat,Non-Veg,257,28.0,31.6,10.0,Boiled
+Fried Fish 93,Seafood,Non-Veg,342,2.2,7.9,7.6,Steamed
+Fried Fish 94,Seafood,Non-Veg,338,2.7,24.6,7.8,Steamed
+Chicken Biryani 95,Rice/Meat,Non-Veg,264,29.7,41.0,5.4,Grilled
+Kebab 96,Meat,Non-Veg,373,12.1,38.4,17.7,Boiled
+Chicken Biryani 97,Rice/Meat,Non-Veg,190,15.4,10.9,3.1,Steamed
+Prawn Fry 98,Seafood,Non-Veg,236,19.8,29.9,19.4,Grilled
+Mutton Curry 99,Meat,Non-Veg,123,8.1,5.5,11.6,Fried
+Grilled Chicken 100,Meat,Non-Veg,216,3.6,44.5,3.3,Cooked with spices
+Mutton Curry 101,Meat,Non-Veg,156,17.2,36.6,19.8,Boiled
+Kebab 102,Meat,Non-Veg,131,3.8,28.8,5.1,Grilled
+Chicken Biryani 103,Rice/Meat,Non-Veg,193,2.7,41.4,19.1,Boiled
+Chicken Biryani 104,Rice/Meat,Non-Veg,127,12.2,46.9,18.1,Grilled
+Fish Curry 105,Seafood,Non-Veg,232,20.0,24.7,4.3,Boiled
+Chicken Biryani 106,Rice/Meat,Non-Veg,189,27.6,28.7,4.1,Boiled
+Mutton Curry 107,Meat,Non-Veg,166,17.4,23.9,19.9,Steamed
+Fish Curry 108,Seafood,Non-Veg,398,23.3,19.0,16.0,Fried
+Fried Fish 109,Seafood,Non-Veg,320,24.5,14.6,2.2,Cooked with spices
+Mutton Curry 110,Meat,Non-Veg,261,3.1,34.4,3.0,Boiled
+Chicken Biryani 111,Rice/Meat,Non-Veg,321,19.6,16.5,5.3,Cooked with spices
+Egg Omelette 112,Egg,Non-Veg,349,20.2,43.4,11.9,Boiled
+Fried Fish 113,Seafood,Non-Veg,225,21.1,23.0,9.1,Steamed
+Chicken Tikka 114,Meat,Non-Veg,111,15.9,44.5,6.5,Steamed
+Fried Fish 115,Seafood,Non-Veg,361,14.6,28.5,11.3,Steamed
+Kebab 116,Meat,Non-Veg,149,12.0,41.2,18.9,Steamed
+Mutton Curry 117,Meat,Non-Veg,383,2.3,27.5,7.8,Grilled
+Chicken Tikka 118,Meat,Non-Veg,202,22.2,6.0,3.0,Steamed
+Fish Curry 119,Seafood,Non-Veg,306,7.6,5.6,11.3,Cooked with spices
+Fried Fish 120,Seafood,Non-Veg,151,11.5,5.0,9.4,Cooked with spices
+Prawn Fry 121,Seafood,Non-Veg,234,6.2,45.2,4.4,Fried
+Egg Omelette 122,Egg,Non-Veg,287,29.2,11.5,17.0,Cooked with spices
+Prawn Fry 123,Seafood,Non-Veg,312,18.9,5.8,14.4,Cooked with spices
+Fish Curry 124,Seafood,Non-Veg,120,13.1,35.2,12.7,Fried
+Egg Curry 125,Egg,Non-Veg,267,17.8,46.6,7.3,Fried
+Kebab 126,Meat,Non-Veg,298,4.0,14.5,9.5,Grilled
+Egg Curry 127,Egg,Non-Veg,253,18.7,8.9,15.3,Steamed
+Fish Curry 128,Seafood,Non-Veg,127,27.3,23.0,17.5,Fried
+Mutton Curry 129,Meat,Non-Veg,315,10.0,36.2,4.9,Steamed
+Egg Omelette 130,Egg,Non-Veg,118,27.2,24.9,10.6,Grilled
+Fried Fish 131,Seafood,Non-Veg,306,22.9,24.4,4.5,Steamed
+Prawn Fry 132,Seafood,Non-Veg,390,27.0,17.6,20.0,Steamed
+Mutton Curry 133,Meat,Non-Veg,349,28.6,38.7,13.0,Fried
+Mutton Curry 134,Meat,Non-Veg,395,21.0,45.0,18.0,Boiled
+Chicken Tikka 135,Meat,Non-Veg,377,23.7,29.4,1.5,Fried
+Prawn Fry 136,Seafood,Non-Veg,132,28.3,40.6,8.4,Fried
+Fried Fish 137,Seafood,Non-Veg,307,14.8,20.5,15.2,Grilled
+Kebab 138,Meat,Non-Veg,109,29.3,24.9,11.2,Fried
+Fish Curry 139,Seafood,Non-Veg,274,24.5,38.1,9.9,Fried
+Grilled Chicken 140,Meat,Non-Veg,251,10.3,26.7,15.9,Fried
+Fish Curry 141,Seafood,Non-Veg,290,14.4,28.0,10.4,Boiled
+Egg Curry 142,Egg,Non-Veg,195,7.7,32.8,5.7,Steamed
+Chicken Tikka 143,Meat,Non-Veg,360,26.8,33.5,15.5,Boiled
+Egg Omelette 144,Egg,Non-Veg,325,12.2,10.5,9.7,Fried
+Mutton Curry 145,Meat,Non-Veg,169,28.2,32.1,11.2,Grilled
+Fried Fish 146,Seafood,Non-Veg,291,28.9,7.4,16.3,Grilled
+Kebab 147,Meat,Non-Veg,290,21.5,37.4,15.0,Grilled
+Chicken Biryani 148,Rice/Meat,Non-Veg,152,25.4,17.9,16.1,Cooked with spices
+Fish Curry 149,Seafood,Non-Veg,296,2.1,11.9,10.8,Fried
+Fish Curry 150,Seafood,Non-Veg,191,22.1,41.9,14.9,Grilled
+Prawn Fry 151,Seafood,Non-Veg,181,8.0,9.5,17.2,Steamed
+Prawn Fry 152,Seafood,Non-Veg,128,23.8,18.7,4.5,Steamed
+Egg Omelette 153,Egg,Non-Veg,286,5.4,25.6,1.4,Boiled
+Chicken Tikka 154,Meat,Non-Veg,183,16.9,45.8,6.4,Grilled
+Fish Curry 155,Seafood,Non-Veg,370,18.4,45.8,8.6,Cooked with spices
+Egg Omelette 156,Egg,Non-Veg,338,24.9,23.6,17.7,Boiled
+Egg Curry 157,Egg,Non-Veg,106,2.8,10.6,19.5,Grilled
+Mutton Curry 158,Meat,Non-Veg,239,26.3,44.7,9.8,Grilled
+Fried Fish 159,Seafood,Non-Veg,160,23.4,23.0,17.6,Grilled
+Fried Fish 160,Seafood,Non-Veg,372,12.0,22.7,14.2,Steamed
+Grilled Chicken 161,Meat,Non-Veg,312,4.5,36.1,7.1,Boiled
+Egg Omelette 162,Egg,Non-Veg,159,26.9,46.3,18.7,Cooked with spices
+Kebab 163,Meat,Non-Veg,187,20.6,45.0,17.6,Fried
+Prawn Fry 164,Seafood,Non-Veg,150,17.6,6.7,12.3,Steamed
+Chicken Tikka 165,Meat,Non-Veg,264,20.4,41.6,16.5,Grilled
+Egg Omelette 166,Egg,Non-Veg,398,17.0,27.5,14.4,Fried
+Chicken Tikka 167,Meat,Non-Veg,182,20.8,30.7,5.7,Boiled
+Fish Curry 168,Seafood,Non-Veg,194,17.6,39.1,8.0,Grilled
+Egg Omelette 169,Egg,Non-Veg,263,23.4,43.3,16.2,Boiled
+Chicken Biryani 170,Rice/Meat,Non-Veg,129,6.8,19.9,5.1,Cooked with spices
+Chicken Tikka 171,Meat,Non-Veg,305,25.1,5.6,9.6,Cooked with spices
+Egg Omelette 172,Egg,Non-Veg,377,6.4,43.2,6.9,Fried
+Egg Curry 173,Egg,Non-Veg,181,8.5,8.5,11.3,Boiled
+Grilled Chicken 174,Meat,Non-Veg,126,29.3,20.1,12.0,Cooked with spices
+Chicken Tikka 175,Meat,Non-Veg,329,7.2,43.4,8.3,Steamed
+Chicken Biryani 176,Rice/Meat,Non-Veg,140,10.8,42.4,9.6,Cooked with spices
+Prawn Fry 177,Seafood,Non-Veg,320,8.1,45.0,3.6,Grilled
+Kebab 178,Meat,Non-Veg,320,24.2,41.3,9.7,Fried
+Kebab 179,Meat,Non-Veg,388,8.2,13.6,16.0,Boiled
+Chicken Tikka 180,Meat,Non-Veg,324,9.4,42.8,12.0,Steamed
+Prawn Fry 181,Seafood,Non-Veg,193,26.7,28.1,15.8,Cooked with spices
+Prawn Fry 182,Seafood,Non-Veg,204,6.0,20.8,11.4,Boiled
+Chicken Tikka 183,Meat,Non-Veg,318,9.2,15.9,17.0,Grilled
+Fried Fish 184,Seafood,Non-Veg,154,26.9,33.8,16.4,Cooked with spices
+Prawn Fry 185,Seafood,Non-Veg,385,13.8,46.1,8.4,Cooked with spices
+Mutton Curry 186,Meat,Non-Veg,344,17.9,35.7,12.0,Boiled
+Fish Curry 187,Seafood,Non-Veg,182,17.0,38.2,11.0,Grilled
+Prawn Fry 188,Seafood,Non-Veg,241,9.3,20.0,19.4,Boiled
+Egg Curry 189,Egg,Non-Veg,162,22.3,19.3,6.2,Grilled
+Prawn Fry 190,Seafood,Non-Veg,214,14.6,13.0,5.5,Boiled
+Egg Omelette 191,Egg,Non-Veg,244,16.2,27.7,12.1,Cooked with spices
+Fried Fish 192,Seafood,Non-Veg,160,6.5,21.4,2.5,Grilled
+Prawn Fry 193,Seafood,Non-Veg,267,25.1,22.1,16.9,Fried
+Prawn Fry 194,Seafood,Non-Veg,305,26.9,45.5,11.4,Fried
+Fish Curry 195,Seafood,Non-Veg,349,3.5,49.1,2.8,Grilled
+Fried Fish 196,Seafood,Non-Veg,268,26.0,20.0,2.2,Fried
+Fish Curry 197,Seafood,Non-Veg,103,3.1,43.5,19.8,Steamed
+Chicken Tikka 198,Meat,Non-Veg,239,25.9,26.2,3.4,Grilled
+Grilled Chicken 199,Meat,Non-Veg,172,21.3,45.1,15.2,Boiled
+Chicken Tikka 200,Meat,Non-Veg,212,7.8,21.8,3.0,Steamed
+Vegan Burger 1,Plant-based,Vegan,124,7.8,7.1,5.2,Fried
+Chickpea Salad 2,Legume,Vegan,204,27.3,11.1,7.6,Steamed
+Vegan Curry 3,Vegetable,Vegan,318,22.6,14.9,16.9,Cooked with spices
+Avocado Salad 4,Fruit,Vegan,310,14.2,46.5,13.1,Steamed
+Oatmeal 5,Grain,Vegan,335,22.6,21.3,8.8,Cooked with spices
+Quinoa 6,Grain,Vegan,324,23.4,35.3,11.2,Cooked with spices
+Quinoa 7,Grain,Vegan,293,20.9,26.2,15.4,Steamed
+Tofu 8,Soy,Vegan,267,18.9,31.5,13.2,Steamed
+Vegan Wrap 9,Plant-based,Vegan,128,28.7,17.8,14.4,Boiled
+Vegan Wrap 10,Plant-based,Vegan,222,19.2,12.9,16.8,Boiled
+Oatmeal 11,Grain,Vegan,359,15.3,21.0,19.2,Raw
+Smoothie Bowl 12,Fruit,Vegan,325,27.9,9.0,16.0,Boiled
+Smoothie Bowl 13,Fruit,Vegan,172,19.8,26.5,11.3,Fried
+Vegan Lentil Soup 14,Legume,Vegan,193,10.7,10.0,14.7,Boiled
+Avocado Salad 15,Fruit,Vegan,297,9.7,32.0,8.6,Cooked with spices
+Vegan Wrap 16,Plant-based,Vegan,190,20.2,33.1,3.7,Fried
+Smoothie Bowl 17,Fruit,Vegan,274,7.0,17.0,3.1,Steamed
+Vegan Lentil Soup 18,Legume,Vegan,215,27.7,26.3,13.8,Fried
+Smoothie Bowl 19,Fruit,Vegan,376,18.1,21.6,1.1,Boiled
+Vegan Lentil Soup 20,Legume,Vegan,191,15.2,19.8,11.3,Cooked with spices
+Oatmeal 21,Grain,Vegan,371,23.6,15.9,5.3,Steamed
+Quinoa 22,Grain,Vegan,282,26.4,38.8,6.4,Fried
+Smoothie Bowl 23,Fruit,Vegan,243,26.0,27.1,14.5,Raw
+Oatmeal 24,Grain,Vegan,358,10.4,49.3,7.7,Boiled
+Vegan Wrap 25,Plant-based,Vegan,275,2.4,14.0,5.7,Steamed
+Vegan Burger 26,Plant-based,Vegan,255,6.5,18.1,13.5,Cooked with spices
+Vegan Wrap 27,Plant-based,Vegan,359,16.8,39.1,6.6,Steamed
+Avocado Salad 28,Fruit,Vegan,331,17.1,14.1,2.5,Boiled
+Vegan Curry 29,Vegetable,Vegan,211,11.2,41.1,14.3,Steamed
+Vegan Lentil Soup 30,Legume,Vegan,280,13.1,30.1,16.0,Raw
+Vegan Lentil Soup 31,Legume,Vegan,111,14.5,31.7,18.8,Steamed
+Chickpea Salad 32,Legume,Vegan,339,18.0,28.0,2.4,Boiled
+Vegan Lentil Soup 33,Legume,Vegan,170,20.0,23.6,16.9,Raw
+Quinoa 34,Grain,Vegan,200,25.2,23.7,17.4,Boiled
+Tofu 35,Soy,Vegan,188,21.4,48.2,8.4,Raw
+Chickpea Salad 36,Legume,Vegan,286,6.4,45.0,14.3,Steamed
+Vegan Lentil Soup 37,Legume,Vegan,372,24.6,9.4,7.5,Steamed
+Vegan Lentil Soup 38,Legume,Vegan,157,24.3,40.4,10.9,Cooked with spices
+Quinoa 39,Grain,Vegan,222,16.0,30.2,5.0,Boiled
+Vegan Curry 40,Vegetable,Vegan,160,6.4,10.9,3.1,Raw
+Vegan Curry 41,Vegetable,Vegan,315,10.3,34.6,9.1,Fried
+Tofu 42,Soy,Vegan,221,25.8,14.9,6.6,Boiled
+Avocado Salad 43,Fruit,Vegan,246,17.9,36.1,11.6,Cooked with spices
+Vegan Lentil Soup 44,Legume,Vegan,397,26.0,37.3,16.8,Steamed
+Vegan Wrap 45,Plant-based,Vegan,292,30.0,13.0,15.2,Fried
+Avocado Salad 46,Fruit,Vegan,111,13.5,45.0,2.1,Fried
+Chickpea Salad 47,Legume,Vegan,121,16.3,10.8,2.7,Steamed
+Tofu 48,Soy,Vegan,274,6.1,23.3,7.3,Cooked with spices
+Vegan Burger 49,Plant-based,Vegan,137,25.1,45.0,15.7,Steamed
+Vegan Burger 50,Plant-based,Vegan,114,26.3,11.1,19.6,Fried
+Vegan Lentil Soup 51,Legume,Vegan,289,11.2,35.0,10.9,Fried
+Tofu 52,Soy,Vegan,197,8.9,7.7,7.0,Cooked with spices
+Vegan Lentil Soup 53,Legume,Vegan,312,17.9,18.5,3.5,Raw
+Vegan Lentil Soup 54,Legume,Vegan,120,13.4,16.6,2.0,Steamed
+Vegan Curry 55,Vegetable,Vegan,144,14.1,19.6,13.0,Cooked with spices
+Quinoa 56,Grain,Vegan,257,28.5,42.5,18.8,Steamed
+Avocado Salad 57,Fruit,Vegan,121,12.1,9.1,2.7,Cooked with spices
+Oatmeal 58,Grain,Vegan,186,12.2,46.0,2.5,Cooked with spices
+Chickpea Salad 59,Legume,Vegan,390,22.2,23.5,3.8,Fried
+Smoothie Bowl 60,Fruit,Vegan,251,28.3,26.6,6.0,Raw
+Avocado Salad 61,Fruit,Vegan,135,9.3,48.4,8.9,Raw
+Oatmeal 62,Grain,Vegan,374,3.6,15.2,4.6,Fried
+Vegan Wrap 63,Plant-based,Vegan,203,2.4,26.5,2.7,Steamed
+Vegan Wrap 64,Plant-based,Vegan,167,22.7,7.1,14.5,Fried
+Quinoa 65,Grain,Vegan,153,28.0,6.7,19.8,Steamed
+Avocado Salad 66,Fruit,Vegan,163,15.0,15.6,16.7,Steamed
+Oatmeal 67,Grain,Vegan,164,6.4,10.4,10.9,Fried
+Vegan Burger 68,Plant-based,Vegan,262,18.7,26.5,2.9,Fried
+Quinoa 69,Grain,Vegan,388,19.1,30.3,16.1,Fried
+Vegan Burger 70,Plant-based,Vegan,253,4.4,5.4,1.1,Raw
+Smoothie Bowl 71,Fruit,Vegan,269,26.6,47.3,7.5,Boiled
+Vegan Curry 72,Vegetable,Vegan,133,3.6,33.3,10.0,Raw
+Smoothie Bowl 73,Fruit,Vegan,205,10.8,19.5,19.4,Fried
+Avocado Salad 74,Fruit,Vegan,351,29.0,5.2,16.2,Fried
+Vegan Curry 75,Vegetable,Vegan,210,15.0,23.6,10.7,Boiled
+Chickpea Salad 76,Legume,Vegan,109,3.7,10.2,2.4,Raw
+Smoothie Bowl 77,Fruit,Vegan,257,16.1,31.7,15.1,Fried
+Vegan Curry 78,Vegetable,Vegan,177,13.9,30.0,10.4,Boiled
+Vegan Wrap 79,Plant-based,Vegan,201,16.6,48.5,14.5,Steamed
+Oatmeal 80,Grain,Vegan,119,18.7,28.4,11.4,Steamed
+Vegan Wrap 81,Plant-based,Vegan,180,10.5,40.4,13.0,Fried
+Quinoa 82,Grain,Vegan,264,14.7,33.5,19.2,Boiled
+Vegan Burger 83,Plant-based,Vegan,165,2.5,6.1,10.8,Cooked with spices
+Chickpea Salad 84,Legume,Vegan,331,22.9,15.7,11.6,Raw
+Smoothie Bowl 85,Fruit,Vegan,273,3.4,39.6,18.0,Fried
+Vegan Burger 86,Plant-based,Vegan,348,22.8,15.9,9.5,Steamed
+Quinoa 87,Grain,Vegan,317,6.9,19.9,5.9,Raw
+Vegan Curry 88,Vegetable,Vegan,368,16.8,47.0,13.6,Boiled
+Avocado Salad 89,Fruit,Vegan,121,12.5,34.1,3.0,Fried
+Tofu 90,Soy,Vegan,124,17.6,12.5,14.6,Raw
+Chickpea Salad 91,Legume,Vegan,112,16.1,41.3,9.6,Fried
+Oatmeal 92,Grain,Vegan,356,28.8,26.4,19.4,Boiled
+Oatmeal 93,Grain,Vegan,274,2.4,18.5,6.3,Cooked with spices
+Tofu 94,Soy,Vegan,186,3.0,7.2,19.7,Boiled
+Vegan Wrap 95,Plant-based,Vegan,228,10.6,18.9,2.5,Cooked with spices
+Tofu 96,Soy,Vegan,162,20.4,49.8,3.2,Steamed
+Vegan Lentil Soup 97,Legume,Vegan,191,27.1,16.5,16.6,Cooked with spices
+Quinoa 98,Grain,Vegan,103,9.7,43.0,12.2,Steamed
+Vegan Wrap 99,Plant-based,Vegan,324,4.2,17.7,16.2,Fried
+Tofu 100,Soy,Vegan,191,24.8,10.6,14.0,Steamed
